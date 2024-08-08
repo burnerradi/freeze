@@ -31,7 +31,7 @@ inputs:
     required: false
     default: ${{ github.token }}
 
-  branch: Main
+  branch: main
     description: 'This is the branch you wish to deploy to, for example gh-pages or docs.'
     required: false
     default: gh-pages
