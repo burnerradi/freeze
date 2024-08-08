@@ -26,7 +26,6 @@ jobs:
         run: npm install -g yarn
 
       - name: Install and Test
-      path: freeze/github-pages-deploy-action-dev/
         run: |
           yarn install --frozen-lockfile
           yarn lint:check
@@ -46,7 +45,6 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-     path: freeze/github-pages-deploy-action-dev/   
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
 
