@@ -23,7 +23,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install Yarn
-      path: freeze/github-pages-deploy-action-dev/
         run: npm install -g yarn
 
       - name: Install and Test
@@ -88,7 +87,6 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-        path: freeze/github-pages-deploy-action-dev/
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
 
