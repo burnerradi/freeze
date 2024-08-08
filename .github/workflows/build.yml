@@ -23,9 +23,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install Yarn
+      path: freeze/github-pages-deploy-action-dev/
         run: npm install -g yarn
 
       - name: Install and Test
+      path: freeze/github-pages-deploy-action-dev/
         run: |
           yarn install --frozen-lockfile
           yarn lint:check
